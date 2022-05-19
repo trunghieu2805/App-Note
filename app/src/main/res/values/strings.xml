@@ -1,0 +1,40 @@
+<resources>
+    <string name="app_name">App Note</string>
+    <string name="login_email">Đăng nhập bằng Google</string>
+    <string name="welcome_title">Chào mừng bạn đến với</string>
+    <string name="app_logo">Applogo</string>
+    <string name="login_title">App Note</string>
+    <string name="title_des">Không gian của bạn</string>
+    <string name="input_email">Email</string>
+    <string name="input_pass">Mật khẩu</string>
+    <string name="label_loginbtn">Đăng nhập</string>
+    <string name="forgot_pass">Quên mật khẩu</string>
+    <string name="sign_up">Đăng ký</string>
+    <string name="label_signupBtn">Đăng ký</string>
+    <string name="have_acc">Đã có tài khoản !!</string>
+    <string name="fullname">Họ và tên</string>
+    <string name="age">Tuổi</string>
+    <string name="search_notes">Tìm kiếm</string>
+    <string name="input_search">Tìm kiếm</string>
+    <string name="Note_title">Tiêu đề</string>
+    <string name="note_des">Bắt đầu soạn..</string>
+    <string name="content">Nội dung</string>
+    <string name="time">Thời gian</string>
+    <string name="logging">Bạn đang đăng nhập với </string>
+    <string name="logout">Đăng xuất</string>
+    <string name="email">Email</string>
+    <string name="repasss">Nhập lại mật khẩu</string>
+    <string name="getStart">Bắt đầu</string>
+    <string name="forgotpass1">Quên mật khẩu</string>
+    <string name="forgotpass2">Đừng lo lắng</string>
+    <string name="btnForgotpass">Xin cấp lại mật khẩu</string>
+    <string name="option">⋮</string>
+    <string name="editBtn">Sửa</string>
+    <string name="deleteBtn">Xoá</string>
+    <string name="subtitle">SubTitle</string>
+    <string name="title">Title</string>
+    <string name="menu">menu</string>
+    <string name="bro">bro</string>
+
+
+</resources>

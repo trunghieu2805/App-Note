@@ -1,0 +1,47 @@
+  {
+  "project_info": {
+    "project_number": "656260936539",
+    "project_id": "dack-b4e5b",
+    "storage_bucket": "dack-b4e5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:656260936539:android:88dc160a5f604cc83e207e",
+        "android_client_info": {
+          "package_name": "com.example.dack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "656260936539-ens6ifjshar63jomhuedh7t7kcls2r91.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dack",
+            "certificate_hash": "f26c7d474258bfd0bb113f62b0f291950739ae2e"
+          }
+        },
+        {
+          "client_id": "656260936539-svurj43mnv639su1lfq5spinsfq2ictd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdhd3FVz9BhVIGSSinPQKkHhL4vikLsHg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "656260936539-svurj43mnv639su1lfq5spinsfq2ictd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
