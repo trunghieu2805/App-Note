@@ -58,10 +58,51 @@ class HomeActivity : AppCompatActivity() {
         noteRecylerview.visibility = View.VISIBLE
         noteRecylerview.setHasFixedSize(true)
 
+        binding.addBtn.setOnClickListener {
+            startActivity(Intent(this@HomeActivity, CreateNoteActivity::class.java))
+        }
         getNoteList()
 
+        binding.layoutSearch.setOnQueryTextListener ( object: SearchView.OnQueryTextListener {
+            override fun onQueryTextSubmit(p0: String?): Boolean {
+                return false
+            }
 
+            override fun onQueryTextChange(p0: String?): Boolean {
+                if(p0 != "") {
+                    searchNote(p0)
+                } else {
+                    getNoteList()
+                }
+                return false
+            }
 
+        })
+
+    }
+
+    private fun searchNote(title: String?) {
+        val sharedPref = getSharedPreferences("notesapp", Context.MODE_PRIVATE)
+        val userId = sharedPref.getString("userID", null).toString()
+        NoteArraylist.clear()
+        database = FirebaseDatabase.getInstance().getReference("notes")
+        val query = database.orderByChild("title")
+        query.addValueEventListener(object : ValueEventListener{
+            override fun onDataChange(snapshot: DataSnapshot) {
+                for(noteSnapshot in snapshot.children) {
+                    val note = noteSnapshot.getValue(Note::class.java)
+                    if(note!!.title.contains(title.toString()) && note!!.userId == userId) {
+                        NoteArraylist.add(note)
+                    }
+                }
+                noteAdapter.notifyDataSetChanged()
+            }
+
+            override fun onCancelled(error: DatabaseError) {
+                TODO("Not yet implemented")
+            }
+
+        })
     }
     private fun getNoteList(){
         database = FirebaseDatabase.getInstance().getReference("notes")
